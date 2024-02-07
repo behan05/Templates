@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#outer-div {
+    width: auto;
+    height: 100vh;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://images.unsplash.com/photo-1514747975201-4715db583da9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 100%;
+    object-fit: contain;
+    background-size: cover;
+}
+
+.box1 {
+    width: 50%;
+    height: 60%;
+    box-shadow: 2px 1px 1px 1px #fff;
+    margin: 4px;
+    border-radius: 8px;
+    animation: bgchange 13s linear 0s infinite;
+}
+
+@keyframes bgchange {
+    10% {
+        background-image: url("https://images.unsplash.com/photo-1559336197-ded8aaa244bc?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-size: 100%;
+        object-fit: contain;
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url("https://images.unsplash.com/photo-1707003839745-0df405c490c5?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-size: 100%;
+        object-fit: contain;
+        background-size: cover;
+    }
+}
+
+.box2 {
+    width: 50%;
+    height: 60%;
+    box-shadow: 2px 1px 1px 1px chocolate;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: 100px;
+}
+
+.formStart {
+    width: 50%;
+    height: 60%;
+    margin: 10px;
+}
+
+#time {
+    width: 240px;
+    height: 110px;
+    box-shadow: 1px 1px 1px 1px chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: chocolate;
+    font-size: 2rem;
+    border-radius: 4px;
+
+}
+
+form {
+    width: 100%;
+    height: 100%;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-left: 4px;
+}
+
+input {
+    font-size: initial;
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+    display: block;
+    font-size: 1em;
+    margin: 4px;
+    font-style: italic;
+}
+
+input::placeholder {
+    color: #fff;
+    font-size: 1rem;
+}
+
+button {
+    font-size: 1.5rem;
+    width: inherit;
+    height: 40px;
+    margin-left: 50px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    box-shadow: 1px 1px 1px 1px chocolate;
+    margin-top: 8px;
+    font-style: italic;
+}
