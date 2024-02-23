@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.nav_container {
+    height: 75px;
+    width: 100%;
+    border: 2px solid #000;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav_container h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 10px 10px 10rem blueviolet;
+    filter: drop-shadow(0 0 2rem #fff) saturate(140%);
+}
+
+.icons_bar {
+    height: 65px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons_bar a {
+    text-decoration: none;
+}
+
+.icons_bar a i {
+    font-size: 2.2rem;
+    color: #fff;
+    height: 62px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    background-color: #04AA6D;
+}
+
+.icons_bar a i:hover {
+    background-color: #000;
+}
+
+.menu {
+    display: none;
+}
+
+.menu,
+.closeMenu {
+    display: none;
+}
+
+.menu,
+.openMenu {
+    display: none;
+}
+
+@media (max-width: 850px) {
+    .icons_bar {
+        display: none;
+    }
+
+    .menu,
+    .openMenu {
+        display: inline-block;
+        font-size: 2.2rem;
+        color: #fff;
+    }
+
+    .icons_bar {
+        position: absolute;
+        top: 4.3rem;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+    }
+
+    .icons_bar a i {
+        font-size: 2rem;
+        color: #fff;
+        height: 62px;
+        width: 100%;
+        background-color: gray;
+    }
+    
+    .icons_bar a i:hover {
+        background-color: #000;
+    }
+
+    .nav_container {
+        background-color: lightseagreen;
+    }
+}
