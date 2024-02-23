@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.nav_container {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    border: 2px solid black;
+    background-color: lightsteelblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 600;
+    word-spacing: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo span {
+    color: red;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    color: #000;
+}
+
+.dropdown {
+    /* position: relative; */
+    display: inline-block;
+}
+
+.dropdown-btn {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    border: none;
+    height: 70px;
+    background-color: transparent;
+}
+
+.dropdown-btn span {
+    color: red;
+    font-weight: 900;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightsteelblue;
+    min-width: 160px;
+    top: 4.5rem;
+
+}
+
+.dropdown-content a {
+    display: block;
+    min-width: 100%;
+    padding: 10px;
+    margin-left: 0px;
+}
+
+.dropdown-content a:hover {
+    width: 100%;
+    position: relative;
+    background-color: #dadada;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menu {
+    display: none;
+}
+
+.openMenu {
+    display: none;
+    font-size: 1.8rem;
+}
+
+.closeMenu {
+    display: none;
+    font-size: 1.8rem;
+}
+
+
+@media (max-width:650px) {
+    .navbar {
+        display: none;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 4.8rem;
+        width: 100%;
+        background-color: lightblue;
+        left: 0;
+        text-align: center;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 10px;
+    }
+
+    .dropdown {
+        margin-left: 20px;
+        margin-top: -10px;
+    }
+
+    .dropdown .dropdown-content {
+        position: absolute;
+        right: 0px;
+        top: 7em;
+        width: 40%;
+        border-radius: 14px;
+        border: 4px solid #fff;
+        box-shadow: 0px 0px 1rem 0.5rem red;
+        background-color: #fff;
+    }
+
+    .menu,
+    .openMenu {
+        display: block;
+    }
+}
